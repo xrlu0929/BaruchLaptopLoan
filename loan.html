@@ -63,8 +63,8 @@
 
 <nav id="nav">
 	<ul>
-		<li id="home" heref="index.html">
-			Home
+		<li id="home">
+			<a href="home.html">Home</a>
 		</li>
 		<li id="Loan">
 			<a href="loan.html">Loan</a>
@@ -79,9 +79,11 @@
 </nav>
 
 <div id="selection">
-    <button id="request" href="loanRequest.html">Request Laptop Loan</button>
+    <button id="request" formtarget="_blank"
+            onclick="location.href = 'loanRequest.html';" >Request Laptop Loan</button>
     <h5>OR</h5>
-    <button id="check">Check Request and History</button>
+    <button id="check" formtarget="_blank"
+            onclick="location.href = 'loanCheck.html';" >Check Request and History</button>
 </div>
 <div id="place_holder_img">
     <img alt="BaruchCIS" src="#"/>

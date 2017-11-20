@@ -80,7 +80,66 @@
 
 <div id="request_form">
     <h1>Request Laptop Loan</h1>
-    <iframe src="#"></iframe>
+    <p>Welcome!</p>
+    <!--prof information gathering(should be able to import from a csv)-->
+    <text>Please select your last name: </text>
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    <text>Please select your first name: </text>
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    <br>
+    <!--professor's courses time slots returned, or imported from a csv, and then that would be match according to professor's name/id in system-->
+    <!--professor choose from the time slots that s/he wants laptop to be scheduled-->
+    <text>Please select time slot</text>
+    <form class='time-slot' action="">
+        <input type="checkbox" name="time1" value="Monday-1750-1905">Monday 17:50-19:05<br>
+        <input type="checkbox" name="time2" value="Thursday-0900-1105">Thursday 09:00-11:05<br>
+        <input type="checkbox" name="time3" value="Friday-1750-1905">Friday 17:50-19:05
+    </form>
+    
+    <text>Please select the date span that your class need laptop</text>
+    <form class='date' action="">
+        <text>from: </text>
+        <select class='month'>
+            <option value="Sep">Sep</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+        </select>
+        <select class="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        
+        <text>to: </text>
+        <select class='month'>
+            <option value="Sep">Sep</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+        </select>
+        <select class="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </form>
+    <button>add more date span</button>
+    <br>
     <button id="submit_request">Submit</button>
 </div>
     
@@ -90,15 +149,8 @@
   
 <body>
 
-<script data-cloud9-id="50"> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
+<script > 
+<!--todo-->
 </script>
 
 
