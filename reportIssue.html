@@ -64,7 +64,7 @@
 <nav id="nav">
 	<ul>
 		<li id="home">
-			<a href="home.html">Home</a>
+			<a href="index.html">Home</a>
 		</li>
 		<li id="Loan">
 			<a href="loan.html">Loan</a>
@@ -78,18 +78,23 @@
 	</ul>
 </nav>
 
-<div id="selection">
-    <button id="request" formtarget="_blank"
-            onclick="location.href = 'loanRequest.html';" >Request Laptop Loan</button>
-    <h5>OR</h5>
-    <button id="check" formtarget="_blank"
-            onclick="location.href = 'loanCheck.html';" >Check Request and History</button>
-    <h5>OR</h5>
-    <button id="check" formtarget="_blank"
-            onclick="location.href = 'reportIssue.html';" >Report issues</button>
-</div>
-<div id="place_holder_img">
-    <img alt="BaruchCIS" src="#"/>
+<div id="report_issue">
+    <h1>Report Issue</h1>
+    
+    <p>Please specify the issue you encountered with</p>
+    <textarea></textarea>
+    
+    <p>Do you have the barcode of the laptop you're reporting? If so, please let us know:</p>
+    <textarea></textarea>
+    
+    <p>If not, please give us some information to identify the laptop:</p>
+    <textarea></textarea>
+    
+    <!--donno if we need this part-->
+    <p>Your email: </p>
+    <textarea></textarea>
+    
+    <button id="submit_request">Submit</button>
 </div>
     
 <footer>
@@ -98,6 +103,10 @@
   
 <body>
 
+<script > 
+<!--todo-->
+</script>
 
 
-</html>
+
+<script src="./livecss.js"></script></body></html>
